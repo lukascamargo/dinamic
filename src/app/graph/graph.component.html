@@ -1,0 +1,22 @@
+<div>
+  <ngx-charts-line-chart *ngIf="value?.length > 0; else lineChart"
+                           [view]="view"
+                           [results]="value"
+                           [xAxis]="showXAxis"
+                           [yAxis]="showYAxis"
+                           [gradient]="gradient"
+                           [xAxisLabel]="xAxisLabel"
+                           [yAxisLabel]="yAxisLabel"
+                           [showXAxisLabel]="showXAxisLabel"
+                           [showYAxisLabel]="showYAxisLabel"
+                           [scheme]="colorScheme"
+                           [timeline]="timeline"
+                           [legend]="legend">
+    </ngx-charts-line-chart>
+</div>
+
+  <ng-template #lineChart>
+    <div style="text-align: center">
+        Nothing to see
+    </div>
+</ng-template>
